@@ -14,7 +14,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '23935817')
 API_HASH = environ.get('API_HASH', '13983bc27b2d1d9ed69e1e104487e5e9')
-BOT_TOKEN = environ.get('BOT_TOKEN', "5832639726:AAFByjaRsSrGHYelb4upjgEoMrC9SG2-emw")
+BOT_TOKEN = environ.get('BOT_TOKEN', "7007292113:AAEqC5-XLlfcICfSAog_6dcGAAiQwF6IFuY")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -49,7 +49,7 @@ LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False")
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002091180110')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), True)
@@ -69,7 +69,7 @@ LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
       # URL Shortener #
 
 URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'adrinolinks.in')
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '')
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', 'c15c21f54c7008ec03c78a7ce637588fe398cc61')
 
      # Auto Delete For Group Message (Self Delete) #
 SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 300))
